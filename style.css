@@ -12,6 +12,7 @@ body {
   background-position: top right;
   margin: 0 auto;
   max-width: 80%;
+  overflow-x: hidden;
 }
 
 #description {
