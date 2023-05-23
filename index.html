@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Employee Satisfaction Survey</h1>
+      <p id="description">
+        Your opinion matters! Take a few minutes to fill out our survey.
+      </p>
+    </header>
+
+    <form id="survey-form">
+      <div class="container" id="img-div"></div>
+      <div class="form-group">
+        <label for="name" id="name-label">First Name</label>
+        <input
+          type="text"
+          id="name"
+          name="first-name"
+          placeholder="First Name"
+          class="form-in"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="last-name" id="lastname-label">Last Name</label>
+        <input
+          type="lastname"
+          id="last-name"
+          name="last-name"
+          placeholder="Last Name"
+          class="form-in"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-mail"
+          class="form-in"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age (optional)</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          placeholder="Age"
+          class="form-in"
+          min="10"
+          max="99"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <p>How would you describe your overall level of job satisfaction?</p>
+        <select id="dropdown" name="job" class="form-in" required>
+          <option value="very satisfied">Very Satisfied</option>
+          <option value="somewhat satisfied">Somewhat Satisfied</option>
+          <option value="neutral">Neutral</option>
+          <option value="somewhat dissatisfied">Somewhat Dissatisfied</option>
+          <option value="very issatisfied">Very Dissatisfied</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Do you feel valued at work?</p>
+        <label>
+          <input
+            name="valued"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input
+            name="valued"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+        <p>If No, Please Explain</p>
+        <textarea
+          id="explain"
+          class="input-textarea"
+          name="explain"
+          placeholder="Type here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Do you have the resources you need to perform your job well?</p>
+        <label>
+          <input
+            name="perform"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input
+            name="perform"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+        <p>If No, Please Explain</p>
+        <textarea
+          id="explain"
+          class="input-textarea"
+          name="feedback"
+          placeholder="Type here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Does your job cause you stress or anxiety?</p>
+        <label>
+          <input
+            name="cause"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input
+            name="cause"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+        <p>If No, Please Explain</p>
+        <textarea
+          id="explain"
+          class="input-textarea"
+          name="feedback"
+          placeholder="Type here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>
+          Are sufficient efforts being made to solicit colleague opinions and
+          feedback?
+        </p>
+        <label>
+          <input
+            name="efforts"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input
+            name="efforts"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+        <p>If No, Please Explain</p>
+        <textarea
+          id="explain"
+          class="input-textarea"
+          name="feedback"
+          placeholder="Type here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Please Provide Any Additional Feedback</p>
+        <textarea
+          id="feedback"
+          class="input-textarea"
+          name="feedback"
+          placeholder="Type here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label
+          >Things that should be improved in the future<br />(Check all that
+          apply):</label
+        >
+      </div>
+      <div class="input-tab">
+        <input
+          type="checkbox"
+          name="autonomy"
+          value="autonomy"
+          class="size"
+        /><label for="checkbox">Allow for Employee Autonomy</label>
+        <input
+          type="checkbox"
+          name="feedback"
+          value="feedback"
+          class="size"
+        /><label for="checkbox">Make Use of Employee Feedback</label>
+        <input type="checkbox" name="goals" value="goals" class="size" /><label
+          for="checkbox"
+          >Assist Your Team Members in Reaching Goals</label
+        >
+        <input
+          type="checkbox"
+          name="coworkers"
+          value="coworkers"
+          class="size"
+        /><label for="checkbox">Encourage Relationships Among Coworkers</label>
+        <input type="checkbox" name="team" value="team" class="size" /><label
+          for="checkbox"
+          >Organize Team Building Exercises</label
+        >
+        <input type="checkbox" name="meet" value="meet" class="size" /><label
+          for="checkbox"
+          >Hold Walking Meetings</label
+        >
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
