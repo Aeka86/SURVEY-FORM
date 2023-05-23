@@ -90,7 +90,8 @@ input.size {
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   body {
-    background-size: contain;
-    background-attachment: scroll;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: center;
   }
 }
